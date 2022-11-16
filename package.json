@@ -71,14 +71,22 @@
     "world-countries": "2.1.0"
   },
   "peerDependencies": {
-    "@types/react": "16.9.4",
-    "@types/react-native": "0.60.17",
-    "@types/react-test-renderer": "16.9.1",
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.59",
+    "@types/react": "^16 || ^17 || ^18",
+    "@types/react-native": ">=0.60",
+    "@types/react-test-renderer": ">=16",
+    "react": "^16 || ^17 || ^18",
+    "react-dom": "^16 || ^17 || ^18",
+    "react-native": ">=0.60",
     "react-native-web": "^0.13.18",
-    "react-test-renderer": ">=16"
+    "react-test-renderer": "^16 || ^17 || ^18"
+  },
+  "peerDependenciesMeta": {
+    "react-native-web": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "jest": {
     "preset": "react-native",
